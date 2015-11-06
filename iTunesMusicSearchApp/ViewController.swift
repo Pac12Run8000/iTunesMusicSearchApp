@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        iTunesConnection.getAlbumForString("")
+        iTunesConnection.getAlbumForString("Drake") { (album:Album) -> () in
+            print(album.title)
+        }
     }
 
     override func didReceiveMemoryWarning() {
