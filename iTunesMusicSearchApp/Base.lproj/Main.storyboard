@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,18 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX5-3g-mwC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iTunes Album Search" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GX5-3g-mwC">
                                 <rect key="frame" x="0.0" y="20" width="600" height="75"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="zik-8Y-jVo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SinhalaSangamMN-Bold" family="Sinhala Sangam MN" pointSize="22"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a search term" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UgB-LK-rd1">
-                                <rect key="frame" x="136" y="113" width="329" height="30"/>
+                                <rect key="frame" x="27" y="113" width="546" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Q9E-ji-CLW"/>
                                 </constraints>
@@ -37,39 +36,25 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obX-OS-Iwb">
-                                <rect key="frame" x="136" y="158" width="46" height="30"/>
+                                <rect key="frame" x="27" y="158" width="136" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="C8e-rW-mML"/>
+                                    <constraint firstAttribute="width" constant="136" id="C8e-rW-mML"/>
                                     <constraint firstAttribute="height" constant="30" id="hZl-en-XkN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Go">
+                                <state key="normal" title="Search iTunes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="btnSearchForMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mmw-yr-fFb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzB-UE-57P">
-                                <rect key="frame" x="221" y="236" width="158" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LHu-Z4-sNU"/>
-                                    <constraint firstAttribute="width" constant="158" id="jLr-64-UCL"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g1N-2W-zWU">
-                                <rect key="frame" x="0.0" y="312" width="600" height="250"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="Xbb-8X-gJ6"/>
-                                    <constraint firstAttribute="height" constant="250" id="dmy-t1-txq"/>
-                                </constraints>
+                                <rect key="frame" x="25" y="223" width="550" height="339"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="CQF-2w-Ro2">
-                                <rect key="frame" x="221" y="563" width="165" height="37"/>
+                                <rect key="frame" x="218" y="563" width="165" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="I1A-1N-ymM"/>
                                     <constraint firstAttribute="width" constant="165" id="JCM-EN-S8c"/>
@@ -77,26 +62,41 @@
                                 <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="currentPageIndicatorTintColor" red="1" green="0.0095619296359999995" blue="0.1433126368" alpha="1" colorSpace="calibratedRGB"/>
                             </pageControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Results Below:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzB-UE-57P">
+                                <rect key="frame" x="216" y="196" width="169" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NDK-07-kOC"/>
+                                    <constraint firstAttribute="width" constant="169" id="bp2-o1-t0H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="CQF-2w-Ro2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="20u-ah-pAe"/>
                             <constraint firstItem="UgB-LK-rd1" firstAttribute="top" secondItem="GX5-3g-mwC" secondAttribute="bottom" constant="18" id="34T-bS-Yw4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GX5-3g-mwC" secondAttribute="trailing" constant="-20" id="7w5-6z-mLd"/>
-                            <constraint firstItem="DzB-UE-57P" firstAttribute="top" secondItem="UgB-LK-rd1" secondAttribute="bottom" constant="93" id="KuS-Tn-5Mz"/>
+                            <constraint firstItem="UgB-LK-rd1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="9WI-vJ-NHl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="g1N-2W-zWU" secondAttribute="trailing" constant="5" id="ECi-rB-kaz"/>
+                            <constraint firstItem="DzB-UE-57P" firstAttribute="top" secondItem="obX-OS-Iwb" secondAttribute="bottom" constant="8" id="F82-TF-StO"/>
+                            <constraint firstItem="DzB-UE-57P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IeH-C3-DPm"/>
+                            <constraint firstItem="g1N-2W-zWU" firstAttribute="top" secondItem="DzB-UE-57P" secondAttribute="bottom" constant="6" id="LWS-9y-iPV"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CQF-2w-Ro2" secondAttribute="bottom" id="M8U-0C-E7T"/>
-                            <constraint firstItem="obX-OS-Iwb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="116" id="R48-qe-QA0"/>
+                            <constraint firstItem="obX-OS-Iwb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="7" id="R48-qe-QA0"/>
                             <constraint firstItem="obX-OS-Iwb" firstAttribute="top" secondItem="UgB-LK-rd1" secondAttribute="bottom" constant="15" id="SVK-NO-aZX"/>
-                            <constraint firstItem="DzB-UE-57P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="201" id="VNb-XJ-agH"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="UgB-LK-rd1" secondAttribute="trailing" constant="115" id="XSZ-W8-fms"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UgB-LK-rd1" secondAttribute="trailing" constant="7" id="T4i-sC-Ei2"/>
+                            <constraint firstItem="CQF-2w-Ro2" firstAttribute="top" secondItem="g1N-2W-zWU" secondAttribute="bottom" constant="1" id="Vig-ZY-pLf"/>
+                            <constraint firstItem="g1N-2W-zWU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="YP6-wD-Lfh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g1N-2W-zWU" secondAttribute="bottom" constant="38" id="crT-rk-3bz"/>
-                            <constraint firstItem="UgB-LK-rd1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="116" id="jDu-xk-NeU"/>
                             <constraint firstItem="GX5-3g-mwC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oCS-Wo-ta7"/>
-                            <constraint firstItem="g1N-2W-zWU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="v9E-FB-6JH"/>
                             <constraint firstItem="GX5-3g-mwC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xMi-UE-z1Z"/>
-                            <constraint firstItem="CQF-2w-Ro2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="201" id="yog-ps-Ld2"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnSearchOutPut" destination="obX-OS-Iwb" id="2JU-fJ-CIN"/>
+                        <outlet property="lblMusicSearchTitle" destination="GX5-3g-mwC" id="rAm-cf-zY1"/>
                         <outlet property="pageIndicator" destination="CQF-2w-Ro2" id="qL4-Wf-exx"/>
                         <outlet property="scrollResults" destination="g1N-2W-zWU" id="wqL-1J-ML5"/>
                         <outlet property="txtSearch" destination="UgB-LK-rd1" id="zlL-oM-hBH"/>

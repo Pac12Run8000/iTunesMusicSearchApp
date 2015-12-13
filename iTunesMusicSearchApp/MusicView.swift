@@ -19,7 +19,11 @@ class MusicView: UIView {
         self.imgArtwork.image = UIImage(data: NSData(contentsOfURL: NSURL(string: album.artworkURL)!)!) 
         self.lblTitle.text = album.title
         self.lblArtist.text = album.artist
-        self.lblGenre.text = album.genre        
+        self.lblGenre.text = album.genre
+        self.backgroundColor = UIColor(red: 0.31, green: 1.00, blue: 0.70, alpha: 1.0)
+        self.imgArtwork.layer.cornerRadius = 10
+        
+       
     }
 
 }

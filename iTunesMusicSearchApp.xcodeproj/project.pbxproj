@@ -12,6 +12,10 @@
 		C61A9C671BEA514E004B4C19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61A9C651BEA514E004B4C19 /* Main.storyboard */; };
 		C61A9C691BEA514E004B4C19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61A9C681BEA514E004B4C19 /* Assets.xcassets */; };
 		C61A9C6C1BEA514E004B4C19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61A9C6A1BEA514E004B4C19 /* LaunchScreen.storyboard */; };
+		C61A9C741BEA553B004B4C19 /* iTunesConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61A9C731BEA553B004B4C19 /* iTunesConnection.swift */; };
+		C687CC321BECEBEC0082EA58 /* MusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C687CC311BECEBEC0082EA58 /* MusicView.xib */; };
+		C687CC341BECEC860082EA58 /* MusicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C687CC331BECEC860082EA58 /* MusicView.swift */; };
+		C6B5D3811BEC13EB007273CE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B5D3801BEC13EB007273CE /* Album.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C61A9C681BEA514E004B4C19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61A9C6B1BEA514E004B4C19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61A9C6D1BEA514E004B4C19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C61A9C731BEA553B004B4C19 /* iTunesConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesConnection.swift; sourceTree = "<group>"; };
+		C687CC311BECEBEC0082EA58 /* MusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicView.xib; sourceTree = "<group>"; };
+		C687CC331BECEC860082EA58 /* MusicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicView.swift; sourceTree = "<group>"; };
+		C6B5D3801BEC13EB007273CE /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +64,32 @@
 			children = (
 				C61A9C611BEA514E004B4C19 /* AppDelegate.swift */,
 				C61A9C631BEA514E004B4C19 /* ViewController.swift */,
+				C61A9C731BEA553B004B4C19 /* iTunesConnection.swift */,
+				C687CC351BECECBB0082EA58 /* View */,
+				C6B5D3821BEC14F0007273CE /* Model */,
 				C61A9C651BEA514E004B4C19 /* Main.storyboard */,
 				C61A9C681BEA514E004B4C19 /* Assets.xcassets */,
 				C61A9C6A1BEA514E004B4C19 /* LaunchScreen.storyboard */,
 				C61A9C6D1BEA514E004B4C19 /* Info.plist */,
 			);
 			path = iTunesMusicSearchApp;
+			sourceTree = "<group>";
+		};
+		C687CC351BECECBB0082EA58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C687CC311BECEBEC0082EA58 /* MusicView.xib */,
+				C687CC331BECEC860082EA58 /* MusicView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C6B5D3821BEC14F0007273CE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C6B5D3801BEC13EB007273CE /* Album.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +152,7 @@
 			files = (
 				C61A9C6C1BEA514E004B4C19 /* LaunchScreen.storyboard in Resources */,
 				C61A9C691BEA514E004B4C19 /* Assets.xcassets in Resources */,
+				C687CC321BECEBEC0082EA58 /* MusicView.xib in Resources */,
 				C61A9C671BEA514E004B4C19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C61A9C741BEA553B004B4C19 /* iTunesConnection.swift in Sources */,
 				C61A9C641BEA514E004B4C19 /* ViewController.swift in Sources */,
+				C687CC341BECEC860082EA58 /* MusicView.swift in Sources */,
 				C61A9C621BEA514E004B4C19 /* AppDelegate.swift in Sources */,
+				C6B5D3811BEC13EB007273CE /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +316,7 @@
 				C61A9C721BEA514E004B4C19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
